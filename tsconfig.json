@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",                 // async/await support
+    "module": "commonjs",               // for Jest / Node
+    "lib": ["ES2019"],                  // include Promise, Map, etc.
+    "strict": true,                     // all strict-mode checks ON
+    "esModuleInterop": true,            // allow default import from CommonJS
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,               // speed up dev iteratation
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "dist",                   // if you ever compile
+    "rootDir": "src",                   // only compile from src/
+    "types": ["node", "jest"]           // pull in Node & Jest type defs
+  },
+  "include": ["src/**/*.ts", "src/**/*.test.ts"],
+  "exclude": ["node_modules"]
+}
